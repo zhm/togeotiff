@@ -80,8 +80,8 @@ class ToGeoTiff < Thor
       end
     end
 
-    size_x = max_lon - min_lon
-    size_y = max_lat - min_lat
+    size_x = max_x - min_x
+    size_y = max_y - min_y
 
     if size_x > size_y
       image_width = size
