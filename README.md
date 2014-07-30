@@ -1,6 +1,6 @@
 ## togeotiff
 
-Create a GeoTIFF from a XYZ/TMS tile server given a GeoJSON bounding box and desired zoom level.
+Create a GeoTIFF from an XYZ/TMS tile server given a GeoJSON bounding box and desired zoom level.
 
 ### Setup
 
@@ -15,6 +15,10 @@ bundle --path .bundle
 ```sh
 ./togeotiff.rb geotiff --geojson https://gist.githubusercontent.com/zhm/321c025c218bad47e3a4/raw/677fa9400c3b94cbb82ae033ce9fd77dc22b6651/map.geojson --zoom 13 --output ~/Documents/pinellas_county_image.tif
 ```
+
+1.) Draw bounding box on [geojson.io](http://geojson.io)
+2.) Save as gist, get the raw URL
+3.) `./togeotiff.rb geotiff --geojson <RAW GIST URL> --zoom <ZOOM LEVEL> --output <OUTPUT FILE>`
 
 ### Note
 
