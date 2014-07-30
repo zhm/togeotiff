@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (1.8.1)
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  thor
